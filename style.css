@@ -11,8 +11,10 @@
     font-family: "DM Sans", sans-serif;
 }
 
-.hover-text:hover + .hover-image {
-    display: block;
+@media (min-width: 768px) {
+    .hover-text:hover + .hover-image {
+        display: block;
+    }
 }
 
 .reveal-overlay {
