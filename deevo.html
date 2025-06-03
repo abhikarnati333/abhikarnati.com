@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deevo - Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/57198c087b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="overflow-x-hidden bg-white">
+    <!-- Loading Overlay -->
+    <div
+      class="reveal-overlay bg-green-800 fixed inset-0 z-50 flex justify-center items-center"
+    >
+      <h1 class="font text-4xl md:text-7xl text-white">DEEVO</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Navbar -->
+      <nav class="fixed bottom-2 w-full z-40 px-5 py-6 flex justify-center">
+        <ul
+          class="flex items-center gap-7 px-10 py-3 bg-[#f2f2f2] bg-opacity-70 text-black font-medium rounded-xl"
+        >
+          <li class="hover:opacity-50"><a href="/">Home</a></li>
+          <li class="underline underline-offset-4">
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li class="hover:opacity-50"><a href="/info.html">Information</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Image -->
+      <video class="w-screen h-screen bg-cover" autoplay muted loop>
+        <source src="/images/deevo/deevo_demo.mp4" type="video/mp4">
+      </video>
+
+      <!-- Project Content -->
+      <div class="font max-w-screen-2xl mx-auto my-12 flex flex-col">
+        <h1 class="text-4xl md:text-6xl text-center">
+          Music Discovery, Curated by AI
+        </h1>
+        <p class="text-lg md:text-2xl my-5 text-center">
+          Role: Lead Developer & Designer<br />
+          Timeline: October 2024 – February 2025<br />
+          Tools: ReactJS, NodeJS, TailwindCSS, Google Gemini & Spotify APIs,
+          MongoDB, Express + more
+        </p>
+
+        <p class="text-lg md:text-2xl my-5 text-center">
+          <a
+            href="https://deevoai.onrender.com/"
+            target="_blank"
+            class="underline underline-offset-4 font-medium"
+            >Try it out!</a
+          >
+        </p>
+
+        <!-- Case Study Content -->
+        <div
+          class="px-5 text-lg md:text-2xl flex flex-col text-left w-full max-w-screen-xl mx-auto space-y-10 mt-10"
+        >
+          <!-- Overview -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">Overview</h2>
+            <p>
+              Deevo is an AI-powered music platform that generates intelligent,
+              personalized playlists based on user prompts. With a clean
+              interface and one-click Spotify export, Deevo empowers users to
+              discover music in a way that feels natural, creative, and deeply
+              personal.
+            </p>
+            <div class="flex gap-4 items-center">
+              <div class="w-1.5 bg-indigo-500 h-28 md:h-20 rounded-sm"></div>
+              <div class="space-y-1">
+                <h3 class="underline underline-offset-4">Goal</h3>
+                <p>
+                  I built Deevo to scratch my own itch. I wanted a smarter, more
+                  intuitive way to find music that
+                  <span class="italic">feels</span> right.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Inspiration -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              The Inspiration
+            </h2>
+            <p>
+              I was tired of skipping through half-hearted Spotify playlists.
+            </p>
+            <p>
+              I’ve always been the go-to music guy in my friend group—the one
+              making playlists for late-night drives or pre-game hype. But when
+              I wanted something new and specific, existing tools failed. I was
+              either stuck typing vague keywords into Spotify or hoping Reddit
+              had a thread for "lofi study jams with 80s synths".
+            </p>
+            <p>That frustration sparked the idea:</p>
+            <div class="flex gap-4 items-center">
+              <div class="w-1.5 bg-pink-500 h-20 md:h-14 rounded-sm"></div>
+              <div>
+                <p>
+                  What if you could just <span class="italic">tell</span> an app
+                  what vibe you're feeling—and it builds the perfect playlist?
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- How I Built It -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              How I Built It
+            </h2>
+            <p>
+              What was supposed to be a weekend project turned into a
+              full-fledged app that took months...
+            </p>
+            <p>
+              <strong>Frontend:</strong> Built with React + Tailwind CSS. I kept
+              the UI minimal—soft colors, centered focus, and no distractions.
+            </p>
+            <p>
+              <strong>Backend:</strong> Built with NodeJS, Express, and MongoDB.
+              I used the Spotify API to get the music data and the Google Gemini
+              API to generate the playlists. Implemented custom authentication
+              with JWT tokens and secure password hashing with bcrypt, plus
+              Spotify OAuth to handle playlist exports.
+            </p>
+            <div class="flex gap-4 items-center">
+              <div class="w-1.5 bg-green-500 h-28 md:h-20 rounded-sm"></div>
+              <div>
+                <p>
+                  This project taught me how to balance clean code with
+                  real-time API orchestration—without compromising on user
+                  experience.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- AI Prompt Design -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              Making AI Understand Music Vibes (Prompt Design)
+            </h2>
+            <p>
+              Getting Deevo to return playlists that actually made sense wasn’t
+              just about calling an API. I wrote pages and pages of prompt
+              instructions—carefully crafting how genres should be mixed, how
+              songs should be formatted, and how to avoid repetition. Each small
+              change in phrasing could dramatically shift the results.
+            </p>
+            <p>
+              Eventually, I found a sweet spot between creative freedom and
+              structured control—where the AI could surprise me but still stay
+              on theme. I also built in fallback logic and auto-cleaning to
+              handle weird outputs like “Track: Unknown.”
+            </p>
+            <img
+              class="rounded-xl max-w-3xl"
+              src="/images/deevo/deevo_music_page.png"
+              alt="Deevo Music Page example"
+            />
+          </section>
+
+          <!-- API Integration -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              Example: API Integration
+            </h2>
+            <img
+              class="rounded-xl max-w-lg"
+              src="/images/deevo/api_integration.png"
+              alt="API integration example"
+            />
+          </section>
+
+          <!-- UI Design Philosophy -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              UI Design Philosophy
+            </h2>
+            <p>
+              Deevo’s interface was designed to feel calm, intentional, and
+              emotionally engaging. I avoided clutter, used soft contrasts, and
+              centered the experience around the user’s imagination and
+              emotional state. The entire app is also built with mobile in mind,
+              so it's responsive and works on any device.
+            </p>
+            <img
+              class="rounded-xl max-w-3xl"
+              src="/images/deevo/deevo_dashboard.png"
+              alt="Deevo Dashboard example"
+            />
+          </section>
+
+          <!-- Prompt-to-Playlist Demo -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              Prompt-to-Playlist Demo
+            </h2>
+            <p>
+              The magic of Deevo happens when a user types a mood-based prompt
+              and gets a full playlist in seconds. This section highlights the
+              real-time responsiveness and delight of that interaction.
+            </p>
+            <img
+              class="rounded-xl max-w-3xl"
+              src="/images/deevo/deevo_prompt_and_music.png"
+              alt="Deevo Prompt & Music example"
+            />
+          </section>
+
+          <!-- System Architecture -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              System Architecture
+            </h2>
+            <p>
+              Deevo’s stack is built with modularity and performance in mind.
+              The frontend and backend are fully decoupled, and all playlist
+              generation and export flows are async with fallback logic.
+            </p>
+
+            <!-- Diagram -->
+            <div class="bg-gray-100 p-6 rounded-xl overflow-x-auto">
+              <div
+                class="flex flex-col items-center gap-6 text-sm md:text-base font-medium text-gray-800"
+              >
+                <!-- Row 1 -->
+                <div class="flex flex-col items-center">
+                  <div class="bg-blue-100 px-4 py-2 rounded-md">
+                    User Prompt
+                  </div>
+                  <div class="h-6 w-1 bg-gray-400"></div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="flex flex-col items-center">
+                  <div class="bg-indigo-100 px-4 py-2 rounded-md">
+                    React Frontend
+                  </div>
+                  <div class="h-6 w-1 bg-gray-400"></div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="flex flex-col items-center">
+                  <div class="bg-green-100 px-4 py-2 rounded-md">
+                    Express Backend (Node.js)
+                  </div>
+                  <div class="h-6 w-1 bg-gray-400"></div>
+                </div>
+
+                <!-- Row 4: API Calls -->
+                <div class="flex flex-wrap justify-center gap-6">
+                  <div class="flex flex-col items-center">
+                    <div class="bg-yellow-100 px-4 py-2 rounded-md">
+                      Google Gemini API
+                    </div>
+                    <div class="h-6 w-1 bg-gray-400"></div>
+                    <div class="text-center text-xs mt-1">
+                      Generates playlist based on prompt
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <div class="bg-pink-100 px-4 py-2 rounded-md">
+                      Spotify API
+                    </div>
+                    <div class="h-6 w-1 bg-gray-400"></div>
+                    <div class="text-center text-xs mt-1">
+                      Fetches tracks + Exports playlist
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Row 5 -->
+                <div class="flex flex-col items-center">
+                  <div class="bg-purple-100 px-4 py-2 rounded-md">
+                    MongoDB (Data Store)
+                  </div>
+                  <div class="h-6 w-1 bg-gray-400"></div>
+                </div>
+
+                <!-- Row 6 -->
+                <div class="flex flex-col items-center">
+                  <div class="bg-gray-200 px-4 py-2 rounded-md">
+                    Final Playlist Displayed / Exported
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Real-World Feedback: What Worked and What Didn't -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              What Worked & What Didn’t
+            </h2>
+            <p>
+              Building Deevo was an iterative process full of small wins and
+              valuable challenges. Here's what stood out:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>
+                <strong>✅ Worked:</strong> Seamless Spotify export felt magical
+                to users.
+              </li>
+              <li>
+                <strong>✅ Worked:</strong> People loved the simplicity—just one
+                box, and you’re done
+              </li>
+              <li>
+                <strong>✅ Worked:</strong> Prompt tuning with Gemini returned
+                surprisingly emotional, relevant songs.
+              </li>
+              <li>
+                <strong>❌ Didn’t:</strong> Handling malformed AI responses
+                required building post-processing logic.
+              </li>
+              <li>
+                <strong>❌ Didn’t:</strong> Spotify API rate limits forced some
+                backend restructuring
+              </li>
+              <li>
+                <strong>❌ Didn’t:</strong> Prompt tuning was more art than
+                science (spent hours testing subtle wording)
+              </li>
+            </ul>
+          </section>
+
+          <!-- What's Next -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              What’s Next
+            </h2>
+            <p>
+              Deevo is far from finished—here are some features I plan to
+              explore:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>Saved prompt/playlist history</li>
+              <li>Prompt templates and curated AI-assisted suggestions</li>
+              <li>Community playlist sharing + prompt-based discovery</li>
+              <li>
+                Audio analysis-based mood reclassification (using Spotify audio
+                features)
+              </li>
+            </ul>
+          </section>
+
+          <!-- Lessons Learned -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              Lessons Learned
+            </h2>
+            <ul class="list-disc list-inside">
+              <li>
+                Prompt engineering is equal parts logic and creativity—writing
+                for AI is its own skill.
+              </li>
+              <li>
+                Designing for emotion matters—users remember how it made them
+                feel more than how it worked.
+              </li>
+              <li>
+                Full-stack projects require zooming in and out constantly—from
+                database schema to typography.
+              </li>
+              <li>
+                Shipping something imperfect still beats waiting for
+                perfect—iteration beats hesitation.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Final Thoughts -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">
+              Final Thoughts
+            </h2>
+            <p>
+              Deevo reminded me why I love building: it combined technical
+              depth, user empathy, and a creative problem space. This wasn’t
+              just a full-stack build—it was a conversation between design, AI,
+              and music.
+            </p>
+            <p>
+              I didn’t just code an app—I designed an experience that people
+              could emotionally connect with.
+            </p>
+          </section>
+
+          <!-- Conclusion -->
+          <section class="space-y-5">
+            <h2 class="font-medium underline underline-offset-4">Conclusion</h2>
+            <p>
+              Deevo started as a side project but evolved into one of the most
+              rewarding things I’ve built. It brought together everything I care
+              about—clean design, emotional resonance, and purposeful
+              engineering.
+            </p>
+            <p>
+              If you're interested in how I built it, want to contribute, or
+              just want to vibe to a new playlist
+            </p>
+            <p>
+                👉
+              <a
+                href="https://deevoai.onrender.com/"
+                target="_blank"
+                class="underline underline-offset-4 font-medium"
+                >Check out Deevo</a
+              >.
+            </p>
+            <p>
+              👉
+              <a
+                href="https://github.com/abhikarnati333/deevoai"
+                target="_blank"
+                class="underline underline-offset-4 font-medium"
+                >View the GitHub repo</a
+              >
+            </p>
+          </section>
+
+          <div class="my-28"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
