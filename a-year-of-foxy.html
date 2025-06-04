@@ -20,10 +20,10 @@
         <!------- NAVBAR ------->
         <nav class="w-full fixed bottom-2 px-5 py-6 flex items-center justify-center z-40">
             <ul class="flex items-center gap-7 rounded-xl px-10 py-3 bg-[#f2f2f2] bg-opacity-70 text-black font-medium">
-                <li class="underline underline-offset-4">
+                <li class="hover:opacity-50">
                     <a href="/">Home</a>
                 </li>
-                <li class="hover:opacity-50">
+                <li class="underline underline-offset-4">
                     <a href="/projects.html">Projects</a>
                 </li>
                 <li class="hover:opacity-50"><a href="/info.html">Information</a></li>
@@ -31,22 +31,75 @@
         </nav>
         <img class="w-full bg-cover" src="/images/a year of foxy/shot_1.jpeg" alt="">
 
-        <div class="font w-11/12 max-w-screen-2xl mx-auto my-12 flex flex-col items-center text-center">
-            <h1 class="flex items-center gap-2 text-4xl md:text-7xl text-center">Leap into Adventure with the Fearless Fox</h1>
-
-            <p class="text-xl md:text-3xl mt-10">"A Year of Foxy" is an enchanting 2D platform game that invites players to guide a clever fox through a vibrant and captivating world. This project blends the thrill of classic platformers with the charm of a visually stunning, ever-changing landscape. Players will navigate challenging levels, overcome obstacles, and discover the secrets hidden within this lively and dynamic environment.</p>
-            <p class="text-xl md:text-3xl mt-7">The game's visually appealing and diverse environments provide players with a feast for the eyes. Additionally, the dynamic obstacle courses and evolving challenges ensure that players are continually tested, offering a satisfying level of difficulty that rewards skill and perseverance. Beyond the platforming challenges, "A Year of Foxy" weaves an engaging storyline that unfolds as the fox explores the world. Players will encounter friendly characters, discover hidden lore, and uncover the mysteries that drive the fox's adventurous spirit.</p>
-
-            <p class="text-lg md:text-2xl mt-5">
-                Role: Lead Developer and Designer<br>
-                Timeline: June 2021 - September 2021<br>
-                Tools: C#, Unity  
-            </p>    
-            
-            <video autoplay loop class="rounded-2xl mt-10" src="/images/a year of foxy/a year of foxy video.mp4"></video>
-            <img class="rounded-2xl mt-7" src="/images/a year of foxy/shot_1.jpeg" alt="">
-            <img class="rounded-2xl mt-7" src="/images/a year of foxy/shot_2.jpeg" alt="">
-            <img class="rounded-2xl mt-7 mb-12" src="/images/a year of foxy/shot_3.jpeg" alt="">
+        <div class="font max-w-screen-2xl mx-auto my-12 flex flex-col">
+            <section class="space-y-10 mb-20">
+                <!-- Title -->
+                <h1 class="text-4xl md:text-6xl text-center">Leap into Adventure with the Fearless Fox</h1>
+                </h1>
+              
+                <!-- Intro -->
+                <section class="max-w-screen-xl mx-auto px-5 text-xl md:text-3xl space-y-7">
+                  <p>
+                    <em>"A Year of Foxy"</em> is an enchanting 2D platformer that invites players to guide a clever fox through a vibrant and captivating world. This project blends the thrill of classic platformers with the charm of a visually stunning, ever-changing landscape.
+                  </p>
+                  <video autoplay loop muted playsinline class="rounded-2xl mx-auto w-full max-w-4xl shadow-lg" src="/images/a year of foxy/a year of foxy video.mp4"></video>
+                  <p>
+                    Players will navigate challenging levels, overcome obstacles, and discover the secrets hidden within this lively and dynamic environment. With evolving challenges and a lush visual style, the game rewards precision, timing, and a spirit of exploration.
+                  </p>
+                  <p>
+                    Beyond the platforming mechanics, the game unfolds a narrative where players encounter friendly characters, reveal hidden lore, and unravel the mystery of what fuels the fox’s journey.
+                  </p>
+                  <p class="text-lg md:text-2xl">
+                    Role: Lead Developer and Designer<br />
+                    Timeline: June 2021 – September 2021<br />
+                    Tools: C#, Unity
+                  </p>
+                </section>
+              
+                <!-- Worldbuilding & Design -->
+                <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+                  <h2 class="font-medium underline underline-offset-4">Design Philosophy & Worldbuilding</h2>
+                  <p>
+                    The heart of <em>A Year of Foxy</em> lies in its atmosphere. From glowing forests to snow-covered ruins, every level was carefully designed to evoke curiosity and wonder. Each environment plays a role in both gameplay and storytelling, offering subtle narrative clues within the terrain.
+                  </p>
+                  <img class="rounded-2xl mx-auto w-full max-w-4xl" src="/images/a year of foxy/shot_1.jpeg" alt="Gameplay Screenshot 1" />
+                  <p>
+                    With Unity as the engine, I utilized 2D sprite animation and physics-driven movement to ensure fluid control. Each level was tested extensively for flow, difficulty balance, and player satisfaction.
+                  </p>
+                </section>
+              
+                <!-- Gameplay Mechanics -->
+                <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+                  <h2 class="font-medium underline underline-offset-4">Gameplay & Challenges</h2>
+                  <p>
+                    The platforming mechanics combine smooth jumping physics with a variety of interactive elements—moving platforms, timed gates, secret passages, and dynamic terrain.
+                  </p>
+                  <img class="rounded-2xl mx-auto w-full max-w-4xl" src="/images/a year of foxy/shot_2.jpeg" alt="Gameplay Screenshot 2" />
+                  <p>
+                    I introduced an evolving difficulty system where obstacles scale as players gain mastery. The objective wasn’t just to create a challenge—but to encourage player growth and reward clever problem-solving.
+                  </p>
+                </section>
+              
+                <!-- Storyline -->
+                <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+                  <h2 class="font-medium underline underline-offset-4">Narrative Integration</h2>
+                  <p>
+                    Each world in the game reveals parts of a broader narrative: a fox seeking meaning through seasons of change. Dialogues with NPCs, discovered artifacts, and background cues hint at a larger story that invites players to piece it together.
+                  </p>
+                  <img class="rounded-2xl mx-auto w-full max-w-4xl" src="/images/a year of foxy/shot_3.jpeg" alt="Gameplay Screenshot 3" />
+                </section>
+              
+                <!-- Final Thoughts -->
+                <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl mb-16">
+                  <h2 class="font-medium underline underline-offset-4">Final Thoughts</h2>
+                  <p>
+                    <em>A Year of Foxy</em> was my first major game design project and remains one of my most fulfilling creative works. It taught me how to blend narrative, art, and code into a playable story—and how to think like both a developer and designer.
+                  </p>
+                  <p>
+                    As I continue exploring game development, I hope to expand this universe and share Foxy's journey with a broader audience, potentially on web or mobile platforms.
+                  </p>
+                </section>
+              </section>
         </div>
 
 

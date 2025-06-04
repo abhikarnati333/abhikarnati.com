@@ -1,57 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FYRS - Projects</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
-    <script src="https://kit.fontawesome.com/57198c087b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="overflow-x-hidden bg-white">
-
-    <div class="reveal-overlay bg-purple-800 fixed top-0 left-0 w-full h-full z-50">
-        <h1 class="font w-full h-screen flex items-center gap-2 text-4xl md:text-7xl justify-center text-white">FYRS</h1>
+    <script
+      src="https://kit.fontawesome.com/57198c087b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden bg-white">
+    <div
+      class="reveal-overlay bg-purple-800 fixed top-0 left-0 w-full h-full z-50"
+    >
+      <h1
+        class="font w-full h-screen flex items-center gap-2 text-4xl md:text-7xl justify-center text-white"
+      >
+        FYRS
+      </h1>
     </div>
 
     <div class="content">
+      <!------- NAVBAR ------->
+      <nav
+        class="w-full fixed bottom-2 px-5 py-6 flex items-center justify-center z-40"
+      >
+        <ul
+          class="flex items-center gap-7 rounded-xl px-10 py-3 bg-[#f2f2f2] bg-opacity-70 text-black font-medium"
+        >
+          <li class="hover:opacity-50">
+            <a href="/">Home</a>
+          </li>
+          <li class="underline underline-offset-4">
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li class="hover:opacity-50"><a href="/info.html">Information</a></li>
+        </ul>
+      </nav>
 
-        <!------- NAVBAR ------->
-        <nav class="w-full fixed bottom-2 px-5 py-6 flex items-center justify-center z-40">
-            <ul class="flex items-center gap-7 rounded-xl px-10 py-3 bg-[#f2f2f2] bg-opacity-70 text-black font-medium">
-                <li class="underline underline-offset-4">
-                    <a href="/">Home</a>
-                </li>
-                <li class="hover:opacity-50">
-                    <a href="/projects.html">Projects</a>
-                </li>
-                <li class="hover:opacity-50"><a href="/info.html">Information</a></li>
+      <img class="w-full bg-cover" src="/images/FYRS/FYRS .png" alt="" />
+
+      <div class="font max-w-screen-2xl mx-auto my-12 flex flex-col">
+        <section class="space-y-10 mb-20">
+          <!-- Title -->
+          <h1 class="text-4xl md:text-6xl text-center">
+            Effortlessly Manage and Deliver Donation Statements
+          </h1>
+          <p class="text-lg md:text-2xl my-5 text-center">
+            Role: Backend Collaborator<br />
+            Timeline: August 2023 – November 2023<br />
+            Tools: Python, Google Sheets API, JSON
+          </p>
+
+          <!-- Overview -->
+          <section
+            class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl"
+          >
+            <h2 class="font-medium underline underline-offset-4">Overview</h2>
+            <p>
+              The Hindu Society of Minnesota (HSMN) is a non-profit organization
+              committed to serving the spiritual, cultural, and social needs of
+              Minnesota’s Hindu community. To support its yearly operations,
+              HSMN relies on the generosity of donors—and with that comes the
+              responsibility of providing accurate, timely, and personal
+              donation statements.
+            </p>
+            <p>
+              As a Software Engineering Intern, I contributed to building
+              <strong>Financial Yearly Reports Sender (FYRS)</strong>—a system designed to
+              automate the generation and delivery of individualized donation
+              receipts to each donor via email.
+            </p>
+          </section>
+
+          <!-- The Problem -->
+          <section
+            class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl"
+          >
+            <h2 class="font-medium underline underline-offset-4">
+              The Problem
+            </h2>
+            <p>
+              Every year, HSMN sends hundreds of donation summaries manually.
+              This manual process was time-consuming, error-prone, and lacked
+              personalization. Additionally, tracking which receipts had been
+              sent (and which had failed) was often messy and inefficient.
+            </p>
+            <p>
+              The organization needed a solution that could:
+            </p>
+            <ul class="list-disc list-inside">
+              <li>Generate accurate donor-specific reports</li>
+              <li>Send them automatically via email</li>
+              <li>Track delivery status in a centralized location</li>
             </ul>
-        </nav>
+          </section>
 
-        <img class="w-full bg-cover" src="/images/FYRS/FYRS .png" alt="">
+          <!-- How I Built It -->
+          <section
+            class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl"
+          >
+            <h2 class="font-medium underline underline-offset-4">
+              How I Built It
+            </h2>
+            <p>
+              I worked on the backend logic of FYRS, focusing on spreadsheet
+              integration and data processing using <strong>Python</strong>. We
+              used the <strong>Google Sheets API</strong> to store donor data and
+              update delivery statuses.
+            </p>
+            <p>
+              A JSON template was used to dynamically generate donation letters
+              personalized for each recipient, pulling in their donation amount,
+              frequency, and name. The tool then used SMTP libraries to email
+              each statement and update the Google Sheet with a "Sent" status
+              once completed.
+            </p>
+            <div class="flex gap-4 items-center">
+              <div class="w-1.5 bg-purple-800 h-20 md:h-16 rounded-sm"></div>
+              <div>
+                <p>
+                  My contributions helped streamline the workflow for HSMN’s
+                  admin team and brought a human touch to donor communication
+                  through personalized automation.
+                </p>
+              </div>
+            </div>
+          </section>
 
-        <div class="font w-11/12 max-w-screen-2xl mx-auto my-12 flex flex-col items-center text-center">
-            <h1 class="flex items-center gap-2 text-4xl md:text-7xl text-center">Effortlessly Manage and Deliver Donation Statements</h1>
+          <!-- Features -->
+          <section
+            class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl"
+          >
+            <h2 class="font-medium underline underline-offset-4">
+              Key Features
+            </h2>
+            <ul class="list-disc list-inside">
+              <li>📥 Store donor data in secure Google Sheet</li>
+              <li>📄 Generates personalized PDF donation summaries</li>
+              <li>📧 Automatically emails receipts to donors</li>
+              <li>✅ Updates spreadsheet with delivery status</li>
+              <li>📂 Logs errors or failed sends for retry</li>
+            </ul>
+          </section>
 
-            <p class="text-xl md:text-3xl mt-10">The <a class="underline underline-offset-4 hover:opacity-50" target="_blank" href="https://www.hindutemplemn.org">Hindu Society of Minnesota (HSMN)</a> is a non-profit based in Maple Grove, Minnesota dedicated to providing religious, spiritual, educational, social, and cultural activities for all generations of the Hindu community.</p>
-            <p class="text-xl md:text-3xl mt-7">As their Software Engineer Intern, I helped build Financial Yearly Reports Sender (FYRS) to create a personalized and heartfelt experience for donors by automating the generation and delivery of individualized donation statements at the end of each year.</p>
-            <p class="text-xl md:text-3xl mt-7">My role focused on seamlessly integrating the system with a spreadsheet to streamline the tracking process. This integration enhances the efficiency of the donation acknowledgment workflow and ensures that the organization can easily monitor and manage the status of each donation statement, specifically noting whether it has been successfully sent to the donor's email.</p>
+          <!-- What Worked / Didn't -->
+          <section
+            class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl"
+          >
+            <h2 class="font-medium underline underline-offset-4">
+              What Worked & What Didn’t
+            </h2>
+            <ul class="list-disc list-inside">
+              <li>
+                <strong>✅ Worked:</strong> Google Sheets API integration made
+                live tracking effortless
+              </li>
+              <li>
+                <strong>✅ Worked:</strong> Personalized templates added a
+                thoughtful donor touch
+              </li>
+              <li>
+                <strong>❌ Didn’t:</strong> SMTP rate limits required batching
+                and retry logic
+              </li>
+              <li>
+                <strong>❌ Didn’t:</strong> Initial spreadsheet structure was
+                inconsistent and required normalization
+              </li>
+            </ul>
+          </section>
 
-            <p class="text-lg md:text-2xl mt-5 mb-12">
-                Role: Backend Collaborator<br>
-                Timeline: August 2023 - November 2023<br>
-                Tools: Python, JSON, Google Sheets API  
-            </p>    
-        </div>
-
-
-        
-        
+          <!-- Final Thoughts -->
+          <section
+            class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl"
+          >
+            <h2 class="font-medium underline underline-offset-4">
+              Final Thoughts
+            </h2>
+            <p>
+              This was a meaningful project that combined automation, user
+              empathy, and nonprofit impact. I learned how to design systems
+              that are not only technically functional but also improve the
+              lives of those relying on them.
+            </p>
+            <p>
+              I’m proud to have played a role in helping HSMN modernize their
+              donor communications and look forward to evolving this system
+              further in the future.
+            </p>
+          </section>
+        </section>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="./script.js"></script>
-    
-</body>
+  </body>
 </html>

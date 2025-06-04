@@ -22,10 +22,10 @@
         <!------- NAVBAR ------->
         <nav class="w-full fixed bottom-2 px-5 py-6 flex items-center justify-center z-40">
             <ul class="flex items-center gap-7 rounded-xl px-10 py-3 bg-[#f2f2f2] bg-opacity-70 text-black font-medium">
-                <li class="underline underline-offset-4">
+                <li class="hover:opacity-50">
                     <a href="/">Home</a>
                 </li>
-                <li class="hover:opacity-50">
+                <li class="underline underline-offset-4">
                     <a href="/projects.html">Projects</a>
                 </li>
                 <li class="hover:opacity-50"><a href="/info.html">Information</a></li>
@@ -34,30 +34,116 @@
 
         <img class="w-full bg-cover" src="/images/Innsight/web scraper .png" alt="" />
 
-        <div class="font w-11/12 max-w-screen-2xl mx-auto my-12 flex flex-col items-center text-center">
-            <h1 class="flex items-center gap-2 text-4xl md:text-7xl text-center">
-                Effortless Hotel Deals at Your Fingertips
-            </h1>
+        <div class="font max-w-screen-2xl mx-auto my-12 flex flex-col">
+            
+        
 
-            <p class="text-xl md:text-3xl mt-10">
-                I created a hotel web scraper app designed to make finding the best
-                hotel deals easier than ever. The core idea behind this app is to
-                streamline the process of searching for hotels by gathering real-time
-                data directly from
-                <a target="_blank" class="underline underline-offset-4 hover:opacity-50"
-                    href="https://www.booking.com">Booking.com.</a>
-                By automating this task, users can quickly access the most up-to-date
-                information on hotel availability, pricing, and reviews, without
-                having to manually search across multiple pages.
+        <section class="space-y-10 mb-20">
+            <!-- Title -->
+            <h1 class="text-4xl md:text-6xl text-center">Effortless Hotel Deals at Your Fingertips</h1>
+            <p class="text-lg md:text-2xl my-5 text-center">
+              Role: Lead Developer<br />
+              Timeline: January 2024 – February 2024<br />
+              Tools: Python, Pandas, Playwright, Tkinter
             </p>
+          
+            <!-- Overview -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">Overview</h2>
+              <p>
+                This project is personal-use terminal app that scrapes real-time hotel listings from Booking.com and presents the best deals in a simplified UI.
+                It was built to eliminate the frustration of flipping through dozens of tabs and filters when trying to book a hotel online.
+              </p>
+              <div class="flex gap-4 items-center">
+                <div class="w-1.5 bg-blue-800 h-24 md:h-20 rounded-sm"></div>
+                <div>
+                  <h3 class="underline underline-offset-4">Goal</h3>
+                  <p>
+                    Develop a tool that could show live hotel prices, availability, and reviews all in one place without the clutter.
+                  </p>
+                </div>
+              </div>
+            </section>
 
-            <p class="text-lg md:text-2xl mt-5">
-                Role: Lead Developer<br />
-                Timeline: January 2024 - February 2024<br />
-                Tools: Python, Pandas, Playwright, Tkinter
-            </p>
-
-            <video autoplay loop class="rounded-2xl mt-10 mb-12" src="/images/Innsight/web scraper video.mp4"></video>
+            <!-- Demo -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">Demo</h2>
+              <video autoplay loop muted class="rounded-2xl" src="/images/Innsight/web scraper video.mp4"></video>
+            </section>
+          
+            <!-- Inspiration -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">The Inspiration</h2>
+              <p>
+                Booking hotels online often feels like a chore. There’s too much clutter, sponsored listings, and conflicting info. I wanted to make a simple app that gets right to the point: show me the best deals.
+              </p>
+              <p>
+                This idea came to life after my family and I were headed on a Las Vegas trip, and wasted hours comparing hotel options manually. I realized I could automate this process and save a lot of time.
+              </p>
+            </section>
+          
+            <!-- How I Built It -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">How I Built It</h2>
+              <p>
+                The app uses <strong>Playwright</strong> to programmatically search Booking.com, applying filters and extracting hotel data (name, price, rating, availability, etc.).
+              </p>
+              <p>
+                <strong>Pandas</strong> is used to structure and clean the data into readable tables, while <strong>Tkinter</strong> handles the GUI, allowing users to input search parameters and view results.
+              </p>
+              <div class="flex gap-4 items-center">
+                <div class="w-1.5 bg-blue-800 h-24 md:h-20 rounded-sm"></div>
+                <div>
+                  <p>
+                    The scraper handles formatting, timeouts, and anti-bot logic to reliably gather fresh data each time it's run.
+                  </p>
+                </div>
+              </div>
+            </section>
+          
+            <!-- Features -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">Key Features</h2>
+              <ul class="list-disc list-inside">
+                <li>🔍 Live hotel search based on location, check-in/out dates, and guest count</li>
+                <li>📈 Sorted results by price or rating using Pandas</li>
+                <li>🪟 Minimal UI via Tkinter</li>
+              </ul>
+            </section>
+          
+            <!-- What Worked / Didn't -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">What Worked & What Didn’t</h2>
+              <ul class="list-disc list-inside">
+                <li><strong>✅ Worked:</strong> Reliable scraping using Playwright's Chromium engine</li>
+                <li><strong>✅ Worked:</strong> Fast results even across multiple pages of listings</li>
+                <li><strong>✅ Worked:</strong> Intuitive UI for casual travelers or quick planning</li>
+                <li><strong>❌ Didn’t:</strong> Booking.com anti-bot mechanisms required tweaking headers and time delays</li>
+                <li><strong>❌ Didn’t:</strong> Tkinter’s UI flexibility was very limited</li>
+              </ul>
+            </section>
+          
+            <!-- What's Next -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">What’s Next</h2>
+              <ul class="list-disc list-inside">
+                <li>Enable hotel image previews</li>
+                <li>Integrate multiple booking sites (e.g., Expedia, Hotels.com)</li>
+                <li>Modernize UI using Electron or a web-based dashboard</li>
+              </ul>
+            </section>
+          
+            <!-- Final Thoughts -->
+            <section class="space-y-5 max-w-screen-xl mx-auto px-5 text-lg md:text-2xl">
+              <h2 class="font-medium underline underline-offset-4">Final Thoughts</h2>
+              <p>
+                This project taught me the real-world tradeoffs of scraping dynamic content and designing tools that prioritize utility. I loved the challenge of bridging automation and usability to solve a personal problem.
+              </p>
+              <p>
+                It’s a small app with a big impact—and it scratched a personal itch while leveling up my Python and scraping skills.
+              </p>
+            </section>
+          </section>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
