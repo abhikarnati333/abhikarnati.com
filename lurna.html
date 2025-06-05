@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lurna - Projects</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/57198c087b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="overflow-x-hidden bg-white">
+    <!-- Loading Overlay -->
+    <div
+      class="reveal-overlay bg-pink-600 fixed inset-0 z-50 flex justify-center items-center"
+    >
+      <h1 class="font text-4xl md:text-7xl text-white">LURNA</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Navbar -->
+      <nav class="fixed bottom-2 w-full z-40 px-5 py-6 flex justify-center">
+        <ul
+          class="flex items-center gap-7 px-10 py-3 bg-[#f2f2f2] bg-opacity-70 text-black font-medium rounded-xl"
+        >
+          <li class="hover:opacity-50"><a href="/">Home</a></li>
+          <li class="underline underline-offset-4">
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li class="hover:opacity-50"><a href="/info.html">Information</a></li>
+        </ul>
+      </nav>
+
+      <!-- Development Badge -->
+      <div
+        class="fixed top-5 right-5 bg-[#f2f2f2] bg-opacity-70 text-black px-4 py-2 rounded-lg flex items-center gap-2 z-50"
+      >
+        <span class="relative flex h-3 w-3">
+          <span
+            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-800 opacity-75"
+          ></span>
+          <span
+            class="relative inline-flex rounded-full h-3 w-3 bg-green-500"
+          ></span>
+        </span>
+        <span class="text-sm font font-medium">Currently in Development</span>
+      </div>
+
+      <!-- Hero Image -->
+      <img class="w-full bg-cover" src="/images/lurna/lurna.png" alt="" />
+
+      <!-- Project Content -->
+      <div class="font max-w-screen-2xl mx-auto my-12 flex flex-col">
+        <h1 class="text-4xl md:text-6xl text-center">
+          Smarter Note-Taking for Students
+        </h1>
+
+        <div
+          class="px-5 text-lg md:text-2xl flex flex-col text-left w-full max-w-screen-xl mx-auto space-y-10 mt-10 mb-20"
+        >
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">Overview</h2>
+            <p class="text-lg">
+              Lurna is a student-centric, AI-powered web application designed to
+              transform the way students interact with their notes. At its core,
+              Lurna helps users take, organize, and automatically generate study
+              material (flashcards, quizzes, summaries, etc.) from their notes.
+              It is currently under active development.
+            </p>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">The Problem</h2>
+            <p class="text-lg mb-4">
+              Many students struggle to retain information effectively due to
+              inefficient note-taking and lack of time to revise or create study
+              aids. Existing tools like Notion or Google Docs allow for note
+              storage, but few offer:
+            </p>
+            <ul class="list-disc list-inside mb-4 text-lg">
+              <li>
+                Automated conversion of notes into flashcards, quizzes, or
+                summaries
+              </li>
+              <li>
+                An academic workflow specifically tailored for studying and exam
+                prep
+              </li>
+              <li>
+                Integration of spaced repetition or AI-based learning techniques
+              </li>
+            </ul>
+            <p class="text-lg">
+              This leads to inconsistent revision habits, wasted time manually
+              generating study materials, and underutilized notes.
+            </p>
+            <p class="text-lg mt-4 font-medium">Supporting Data:</p>
+            <ul class="list-disc list-inside text-lg">
+              <li>
+                75% of students report feeling overwhelmed during exam season
+                due to lack of organized study material.
+                <span class="italic">(Education Data Initiative, 2023)</span>
+              </li>
+              <li>
+                Only 38% of students regularly create their own flashcards,
+                despite research showing a 60% improvement in recall using
+                active recall and spaced repetition.
+                <span class="italic"
+                  >(Journal of Cognitive Psychology, 2021)</span
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">The Solution</h2>
+            <p class="text-lg mb-4">
+              Lurna addresses these problems by combining AI with a clean,
+              student-friendly interface. Users can:
+            </p>
+            <ul class="list-disc list-inside text-lg mb-4">
+              <li>
+                Take notes in markdown-like blocks (text, bullet points,
+                equations, etc.)
+              </li>
+              <li>
+                Automatically generate flashcards, multiple-choice quizzes,
+                summaries
+              </li>
+              <li>Organize content by subject, course, and tags</li>
+              <li>Use learning modes (review, test, flashcards)</li>
+              <li>(Planned) Export and sync notes to Google Drive or PDF</li>
+            </ul>
+            <p class="text-lg font-medium">Supporting Data:</p>
+            <ul class="list-disc list-inside text-lg">
+              <li>
+                AI-powered study tools can reduce study time by up to 40% while
+                improving performance.
+                <span class="italic">(McGraw Hill, 2023)</span>
+              </li>
+              <li>
+                Students using intelligent tutoring systems see learning gains
+                equivalent to one-on-one human tutoring.
+                <span class="italic">(OECD Education Report, 2022)</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">
+              Unique Value Proposition
+            </h2>
+            <p class="text-lg">
+              Lurna is not just a note app; it’s a full academic assistant.
+              Unlike generic note tools, it is:
+            </p>
+            <ul class="list-disc list-inside text-lg">
+              <li>
+                <strong>Purpose-built</strong> for high school and college
+                students
+              </li>
+              <li><strong>AI-enhanced</strong> for content generation</li>
+              <li><strong>Easy-to-use</strong> and distraction-free</li>
+            </ul>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">Target Audience</h2>
+            <ul class="list-disc list-inside text-lg">
+              <li>High school and college students</li>
+              <li>Tutoring centers and academic support groups</li>
+              <li>Lifelong learners and self-studiers</li>
+            </ul>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">
+              Business Model (Proposed)
+            </h2>
+            <ul class="list-disc list-inside text-lg mb-4">
+              <li>
+                <strong>Free Tier:</strong> Unlimited notes and courses, AI
+                generation limits per month
+              </li>
+              <li>
+                <strong>Pro Tier:</strong> Increased AI usage, export features,
+                spaced repetition
+              </li>
+              <li>
+                <strong>Institutional Plans:</strong> Bulk licensing for schools
+                or tutoring orgs
+              </li>
+            </ul>
+            <p class="text-lg font-medium">Supporting Data:</p>
+            <ul class="list-disc list-inside text-lg">
+              <li>
+                59% of students are open to paying for AI-powered academic tools
+                if they offer meaningful benefits like time savings and improved
+                grades. <span class="italic">(CampusTech Survey, 2024)</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">Tech Stack</h2>
+            <ul class="list-disc list-inside text-lg">
+              <li><strong>Frontend:</strong> React</li>
+              <li>
+                <strong>Backend:</strong> Convex (Serverless DB & API),
+                Typescript
+              </li>
+              <li>
+                <strong>AI:</strong>Python, Langchain (with OpenAI & Google
+                Gemini), custom fine-tuning
+              </li>
+            </ul>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">Development Timeline</h2>
+            <ul class="list-disc list-inside text-lg">
+              <li>
+                <strong>May - June 2025:</strong> MVP development (note-taking +
+                AI generation)
+              </li>
+              <li>
+                <strong>July 2025:</strong> Beta testing with student users
+              </li>
+              <li>
+                <strong>August 2025:</strong> Full feature rollout, export,
+                learning modes
+              </li>
+              <li><strong>September 2025:</strong> Public launch</li>
+            </ul>
+          </section>
+
+          <section class="space-y-5">
+            <h2 class="text-3xl font-semibold mb-4">Goals</h2>
+            <ul class="list-disc list-inside text-lg">
+              <li>Help students save time and study smarter</li>
+              <li>
+                Provide meaningful, AI-generated content without replacing the
+                learning process
+              </li>
+              <li>Build a trusted brand in the educational tool ecosystem</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-3xl font-semibold mb-4">Conclusion</h2>
+            <p class="text-lg mb-4">
+              Lurna isn’t just another productivity tool—it’s a smart study
+              companion designed for the real lives of students. With a balance
+              of AI automation and intentional design, Lurna aims to reshape how
+              knowledge is absorbed and retained. It builds on the belief that
+              effective learning is not just about content, but context,
+              consistency, and engagement.
+            </p>
+            <p class="text-lg">
+              We’re excited to continue developing Lurna and welcome any
+              feedback, suggestions, or interest in collaboration. Together, we
+              can make studying less stressful and more effective for students
+              everywhere.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
